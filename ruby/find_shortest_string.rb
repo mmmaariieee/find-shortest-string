@@ -1,5 +1,14 @@
 def find_shortest_string(arr)
-  # type your code in here
+  shortedsInx = 0
+  i = 0
+  while i < arr.length
+    if arr[i].length < arr[shortedsInx].length
+      shortedsInx = i 
+    end
+    i += 1
+  end
+
+  arr[shortedsInx]
 end
 
 if __FILE__ == $PROGRAM_NAME
